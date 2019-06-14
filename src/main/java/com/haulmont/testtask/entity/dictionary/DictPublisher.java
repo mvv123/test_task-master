@@ -13,7 +13,8 @@ import java.util.Set;
 public class DictPublisher {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE , generator = "dictionary_publisher_gen")
+    @SequenceGenerator(name = "dictionary_publisher_gen", sequenceName = "seq_dictionary_publisher_id", allocationSize = 1)
     @Column(name = "id")
     private Long id;
 

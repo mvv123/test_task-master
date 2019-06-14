@@ -22,4 +22,7 @@
         <servlet-name>Vaadin Application Servlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    <listener>
+        <listener-class>com.haulmont.testtask.listeners.WebAppPropertiesListener</listener-class>
+    </listener>
 </web-app>

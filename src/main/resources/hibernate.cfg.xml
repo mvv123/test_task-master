@@ -6,7 +6,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
-        <property name="hibernate.connection.url">jdbc:hsqldb:file:${project.basedir}/test-task-master/database/library</property>
+        <property name="hibernate.connection.url">jdbc:hsqldb:file:${webroot}/database/library</property>
         <property name="hibernate.connection.username">SA</property>
         <property name="hibernate.connection.password"></property>
         <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
