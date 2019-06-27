@@ -14,7 +14,7 @@ public class GenreService {
 
     private GenreDAOImpl genreDAO;
 
-    public GenreService() {
+    private GenreService() {
         genreDAO = new GenreDAOImpl();
     }
 

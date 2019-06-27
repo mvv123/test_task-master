@@ -14,7 +14,7 @@ public class DictPublisherService {
 
     private DictPublisherDAOImpl publisherDAO;
 
-    public DictPublisherService() {
+    private DictPublisherService() {
         publisherDAO = new DictPublisherDAOImpl();
     }
 

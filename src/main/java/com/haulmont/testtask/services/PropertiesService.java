@@ -18,7 +18,7 @@ public class PropertiesService {
 
     private Properties genreProperties;
 
-    public PropertiesService() {
+    private PropertiesService() {
         try {
             mainProperties = new Properties();
             mainProperties.load(getClass().getClassLoader().getResourceAsStream("properties/main.properties"));

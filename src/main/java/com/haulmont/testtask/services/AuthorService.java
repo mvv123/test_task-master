@@ -14,7 +14,7 @@ public class AuthorService {
 
     private AuthorDAOImpl authorDAO;
 
-    public AuthorService() {
+    private AuthorService() {
         authorDAO = new AuthorDAOImpl();
     }
 

@@ -14,7 +14,7 @@ public class BookService {
 
     private BookDAOImpl bookDAO;
 
-    public BookService() {
+    private BookService() {
         bookDAO = new BookDAOImpl();
     }
 
