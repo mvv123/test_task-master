@@ -7,8 +7,8 @@ public class WebAppPropertiesListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        String rootPath = sce.getServletContext().getRealPath("/");
-        System.setProperty("webroot", rootPath.substring(0 , rootPath.indexOf("target")));
+        String rootPath = getClass().getClassLoader().getResource("").getPath();
+        System.setProperty("webroot" , rootPath.substring(1 , rootPath.length()));
     }
 
     @Override
